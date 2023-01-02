@@ -1,1 +1,91 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio <G/></title>
+    <link rel="shortcut icon" href="./src/img/logo-g.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+
+</head>
+<body>
+
+    <div id="main-box">
+                                                                                                                                    
+    <div class="imgs">
+    <img class="logo" src="./src/img/logo-g.png" alt="logo">
+
+    <div class="social-links">
+        <a class="copy-discord" title="Discord: Gabriel ;) Click copy to clickboard" href="#"><img src="./src/img/discord-icon-svgrepo-com.svg" alt=""></a>
+        <a href=""><img src="./src/img/github-svgrepo-com.svg" alt=""></a>
+        <a class="copy-gmail" title="Gmail: gabrielziemacki@gmail.com Click copy to clickboard" href="#"><img src="./src/img/gmail-svgrepo-com.svg" alt=""></a>
+    </div>
+</div>
+    <div class="text-box">
+    
+
+    <p class="main-text"><b>Siemano🖐</b> <br> Mam na imię Gabriel zajmuje się projektowaniem UI/UX oraz pisaniem stron internetowych prostych statycznych ale także dynamiczne w każdym bądź razie wszystkie moje strony są w pełni responsywne, intuicyjne oraz szybkie. Zobacz moje prace jeżeli masz ochotę na współpracę napisz do mnie.</p>
+
+    
+
+    <div class="project-box">
+        <p class="project-title"><b>Moje projekty:</b></p>
+        <div class="project-links">
+            <a href="src/pdf/Talking-cars.pdf" class="project-link">&bull; Talking car</a><br>
+            <a href="src/pdf/Yes-Drink.pdf" class="project-link">&bull; Yes?drink!</a><br>
+            <a href="src/pdf/Szybkapremka.pl.pdf" class="project-link">&bull; Szybkapremka</a><br>
+            <a href="src/pdf/Aplikacja bazodanowa-klinika weterynaryjna.pdf" class="project-link">&bull; Aplikacja dla kliniki</a><br>
+            <a href="src/pdf/simple-logowanie-do-banku.pdf" class="project-link">&bull; Logowanie do banku</a><br>
+
+        </div>
+    </div>
+</div>
+
+    </div>
+    
+    
+</body>
+
+<script>
+// Script copy to clipboard Mega simple
+var copyTextBtn = document.querySelector('.copy-discord')
+
+copyTextBtn.addEventListener('click', function(event){
+
+    var copyText = 'Gabriel ;)#0033';
+
+    try {
+        navigator.clipboard.writeText(copyText);
+        return copyText;
+    }catch{
+        return Error;
+    } 
+
+})
+
+</script>
+
+<script>
+    // Script copy to clipboard Mega simple
+    var copyTextBtn = document.querySelector('.copy-gmail')
+    
+    copyTextBtn.addEventListener('click', function(event){
+    
+        var copyText = 'Gabrielziemacki@gmail.com';
+    
+        try {
+            navigator.clipboard.writeText(copyText);
+            return copyText;
+        }catch{
+            return Error;
+        } 
+    
+    })
+    
+    </script>
+
+
+
+</html>
